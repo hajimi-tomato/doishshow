@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="狗鱼（doish）的数字档案：AI 产品、AIGC、交互设计与视觉实践。">
+    <meta name="theme-color" content="#75b8df">
+    <title>DOISH HOME OS · Memory Build</title>
+    <link rel="stylesheet" href="css/style.css?v=20260921-public">
+    <link rel="stylesheet" href="css/internship.css?v=20260829-2">
+</head>
+<body>
+    <a class="skip-link" href="#desktop">跳到桌面</a>
+
+    <section id="boot-screen" class="boot-screen" aria-label="系统启动画面">
+        <button id="boot-skip" class="boot-skip">跳过启动</button>
+        <div class="boot-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <p>DOISH HOME OS</p>
+        <small>Memory Build 2009.08</small>
+        <div class="boot-progress"><span></span></div>
+    </section>
+
+    <main id="desktop" class="desktop" tabindex="-1">
+        <div class="sun-wash" aria-hidden="true"></div>
+        <aside class="memory-note">
+            <strong>给第一次来的人：</strong>
+            <span>没有正确的浏览顺序。</span>
+            <button data-open="start">如果赶时间，打开 Start_Here。</button>
+        </aside>
+
+        <aside class="desktop-gadget" aria-label="个人概览">
+            <div class="gadget-topline"><span><i></i> DESKTOP GUIDE</span><time>公开作品网站</time></div>
+            <div class="gadget-userline"><span class="gadget-alias" aria-hidden="true">D</span><div><span>当前用户</span><b>狗鱼 · doish</b><small>AI 产品、交互设计与视觉创作</small></div><button data-open="about" aria-label="打开关于我">…</button></div>
+            <p class="gadget-copy">第一次来？先点「快速认识我」。也可以直接打开桌面文件夹，查看项目、简历和联系方式。</p>
+            <div class="gadget-folders" aria-label="作品文件夹">
+                <button data-open="product"><img src="assets/images/icons/128/product.png" alt=""><span>产品</span></button>
+                <button data-open="ui"><img src="assets/images/icons/128/ui.png" alt=""><span>交互</span></button>
+                <button data-open="ai"><img src="assets/images/icons/128/ai.png" alt=""><span>生图</span></button>
+                <button data-open="art"><img src="assets/images/icons/128/art.png" alt=""><span>美术</span></button>
+            </div>
+            <section id="agent-core" class="agent-core" data-phase="scanning" data-intent="recruiter" aria-label="本地访问意图推断" aria-live="polite">
+                <header><span><i></i> AGENT_ROUTER</span><small id="agent-phase">SCANNING</small></header>
+                <div class="agent-route-map" aria-hidden="true"><i data-agent-node="recruiter"></i><i data-agent-node="product"></i><i data-agent-node="visual"></i><i data-agent-node="explorer"></i></div>
+                <p id="agent-message">正在观察浏览路径，等待形成第一条意图线索。</p>
+                <div class="agent-confidence"><span>INTENT CONFIDENCE</span><b id="agent-confidence">25%</b><i><span id="agent-confidence-fill"></span></i></div>
+                <button id="agent-recommendation" class="agent-recommendation" data-open="start"><span>建议路径</span><b>Start_Here</b><i>→</i></button>
+                <details class="agent-explain"><summary>查看本地判断依据</summary><div id="agent-scores"></div><small>只使用本次访问中的页面顺序与停留时间，不上传数据。</small></details>
+            </section>
+            <div class="gadget-actions"><button class="gadget-button primary" data-open="start"><span>▶</span><b>从 Start_Here 开始</b><i>↗</i></button><button class="gadget-button" data-open="contact"><span>✉</span><b>建立连接</b><i>↗</i></button></div>
+            <footer><span>四个分类 · 九个项目档案</span><span>自由探索</span></footer>
+        </aside>
+
+        <div class="desktop-icons" aria-label="桌面项目">
+            <button class="desktop-icon is-priority" data-window="start"><span class="os-icon"><img src="assets/images/icons/128/start.png?v=20260830-recut" alt=""></span><span>Start_Here</span></button>
+            <button class="desktop-icon" data-window="ai"><span class="os-icon"><img src="assets/images/icons/128/ai.png?v=20260830-recut" alt=""></span><span>AI_Gallery</span></button>
+            <button class="desktop-icon" data-window="ui"><span class="os-icon"><img src="assets/images/icons/128/ui.png" alt=""></span><span>UI_Studio</span></button>
+            <button class="desktop-icon" data-window="product"><span class="os-icon"><img src="assets/images/icons/128/product.png" alt=""></span><span>Product_Lab</span></button>
+            <button class="desktop-icon" data-window="art"><span class="os-icon"><img src="assets/images/icons/128/art.png" alt=""></span><span>Art_Corner</span></button>
+            <button class="desktop-icon" data-window="about"><span class="os-icon"><img src="assets/images/icons/128/about.png" alt=""></span><span>About_Me.txt</span></button>
+            <button class="desktop-icon" data-window="terminal"><span class="os-icon"><img src="assets/images/icons/128/terminal.png?v=20260830-recut" alt=""></span><span>Logic_Terminal</span></button>
+            <button class="desktop-icon" data-window="memory"><span class="os-icon"><img src="assets/images/icons/128/memory.png?v=20260830-recut" alt=""></span><span>Memory_Pool</span></button>
+            <button class="desktop-icon" data-window="resume"><span class="os-icon"><img src="assets/images/icons/128/resume.png" alt=""></span><span>我的简历</span></button>
+            <button class="desktop-icon" data-window="contact"><span class="os-icon"><img src="assets/images/icons/128/contact.png" alt=""></span><span>联系我</span></button>
+        </div>
+
+        <button class="desktop-icon desktop-trash" data-window="trash"><span class="os-icon"><img src="assets/images/icons/128/trash.png" alt=""></span><span>回收站</span></button>
+        <div id="window-container"></div>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </main>
+
+    <aside id="experience-switcher" class="experience-switcher" aria-label="浏览模式">
+        <span>浏览模式</span>
+        <div role="group" aria-label="选择浏览方式">
+            <button data-experience="tour"><i aria-hidden="true">✦</i><b>快速认识我</b><small>90 秒路线</small></button>
+            <button class="active" data-experience="explore" aria-pressed="true"><i aria-hidden="true">⌘</i><b>自由探索</b><small>返回桌面</small></button>
+        </div>
+    </aside>
+
+    <nav id="taskbar" class="taskbar" aria-label="系统任务栏">
+        <button id="start-btn" class="start-btn" aria-label="打开开始菜单" aria-expanded="false" aria-controls="start-menu"><span></span></button>
+        <div class="quick-launch">
+            <button data-open="start" title="90 秒认识我"><img src="assets/images/icons/128/start.png" alt=""></button>
+            <button data-open="about" title="关于我"><img src="assets/images/icons/128/about.png" alt=""></button>
+            <button data-open="contact" title="联系我"><img src="assets/images/icons/128/contact.png" alt=""></button>
+        </div>
+        <div id="taskbar-windows" class="taskbar-windows"></div>
+        <div class="system-tray">
+            <button id="agent-tray" class="memory-network" data-open="terminal" title="打开 Agent 逻辑终端"><i></i><span class="agent-tray-label">AGENT · SCANNING</span></button>
+            <button id="sound-toggle" class="tray-btn" title="开关音效">♪</button>
+            <button id="theme-toggle" class="tray-btn" title="切换回忆时段">☀</button>
+            <button id="tray-clock" class="tray-clock" title="进入 2009 回忆模式"><strong>00:00</strong><span id="tray-date"></span></button>
+        </div>
+    </nav>
+
+    <section id="start-menu" class="start-menu" aria-label="开始菜单">
+        <header><div class="avatar">D</div><div><strong>狗鱼</strong><span>doish · AI 产品 × AIGC × 交互设计</span></div></header>
+        <div class="start-grid">
+            <div class="start-apps">
+                <button data-open="start"><b><img src="assets/images/icons/128/start.png" alt=""></b><span><strong>Start Here</strong><small>90 秒总览</small></span></button>
+                <button data-open="product"><b><img src="assets/images/icons/128/product.png" alt=""></b><span><strong>Product Lab</strong><small>Agent / 意图 / 评价体系</small></span></button>
+                <button data-open="ai"><b><img src="assets/images/icons/128/ai.png" alt=""></b><span><strong>AI Gallery</strong><small>生成系统与视觉实验</small></span></button>
+                <button data-open="ui"><b><img src="assets/images/icons/128/ui.png" alt=""></b><span><strong>UI Studio</strong><small>界面与交互设计</small></span></button>
+                <button data-open="art"><b><img src="assets/images/icons/128/art.png" alt=""></b><span><strong>Art Corner</strong><small>一些只负责被记住的画面</small></span></button>
+                <div id="recent-list" class="recent-list"></div>
+                <label class="start-search"><span>⌕</span><input id="project-search" type="search" placeholder="搜索项目和文件"></label>
+            </div>
+            <div class="start-links">
+                <button data-open="about">关于我</button>
+                <button data-open="resume">我的简历</button>
+                <button data-open="contact">联系我</button>
+                <button data-open="terminal">Logic Terminal</button>
+                <button data-open="memory">记忆档案</button>
+                <hr>
+                <button id="restart-memory">重新启动这段记忆</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="context-menu" class="context-menu" role="menu">
+        <button role="menuitem" data-context="tour">用 90 秒认识我</button>
+        <button role="menuitem" data-context="memory">进入回忆模式</button>
+        <button role="menuitem" data-context="refresh">刷新这片天空</button>
+        <hr>
+        <button role="menuitem" data-context="about">关于这台电脑</button>
+    </div>
+
+    <div id="image-lightbox" class="image-lightbox" hidden role="dialog" aria-modal="true" aria-label="查看完整图片">
+        <button class="lightbox-close" data-lightbox-close aria-label="关闭完整图片">×</button>
+        <div class="lightbox-stage"><img id="lightbox-image" src="" alt=""><p id="lightbox-caption"></p></div>
+    </div>
+
+    <script src="js/windows.js?v=20260717-10"></script>
+    <script src="js/content.js?v=20260921-public"></script>
+    <script src="js/internship.js?v=20260830-privacy-3"></script>
+    <script src="js/agent.js?v=20260717-10"></script>
+    <script src="js/main.js?v=20260921-public"></script>
+</body>
+</html>
