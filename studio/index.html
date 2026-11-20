@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2ece4">
+  <title>doish — 我的房间</title>
+  <script type="module" crossorigin src="./assets/room-CMLJVl6Z.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="./assets/room-DChKEkVl.css">
+</head>
+<body>
+  <main id="stage" aria-label="可拖动观看的三维工作室">
+    <canvas id="scene" aria-label="青绿复古电脑、唱片机与复古绿柜子的 3D 房间"></canvas>
+    <div class="seasonal-edges" aria-hidden="true">
+      <div class="seasonal-edge seasonal-edge--sky"></div>
+      <div class="seasonal-edge seasonal-edge--street"></div>
+    </div>
+    <div class="room-film" aria-hidden="true"></div>
+    <div id="loading" role="status"><i></i><span>走进 doish 的房间</span></div>
+    <div id="error" hidden><h1>房间暂时无法显示</h1><p>请使用支持 WebGL 的浏览器打开。</p></div>
+    <div class="room-navigation">
+      <div id="room-menu" hidden>
+        <nav aria-label="场景视角">
+          <button data-view="left" aria-pressed="false">左侧</button>
+          <button data-view="perspective" aria-pressed="true">回中间</button>
+          <button data-view="right" aria-pressed="false">右侧</button>
+        </nav>
+        <label class="daylight-control">
+          <span>地毯</span>
+          <select id="room-rug">
+            <option value="oat">燕麦双边</option>
+            <option value="hills">鼠尾草叠山</option>
+            <option value="clay">陶土格纹</option>
+          </select>
+        </label>
+        <button id="motion" aria-pressed="true">动效 <span>开</span></button>
+        <div class="caption" role="status"><p></p></div>
+        <p class="room-gesture">WASD 移动 · 左右拖动 · 滚轮或双指缩放</p>
+      </div>
+      <button id="room-menu-toggle" aria-label="房间导航" aria-expanded="false" aria-controls="room-menu">
+        <span class="fish-mark" aria-hidden="true"></span>
+      </button>
+    </div>
+  </main>
+</body>
+</html>
