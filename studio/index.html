@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f2ece4">
   <title>doish — 我的房间</title>
-  <script type="module" crossorigin src="./assets/room-F9q2SpKy.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="stylesheet" crossorigin href="./assets/room-DChKEkVl.css">
+  <script type="module" crossorigin src="/assets/room-BJxdUCfj.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/disc-catalog-BerLgE9d.js">
+  <link rel="stylesheet" crossorigin href="/assets/room-B2RARPQq.css">
 </head>
 <body>
   <main id="stage" aria-label="可拖动观看的三维工作室">
@@ -21,6 +21,8 @@
     <div id="error" hidden><h1>房间暂时无法显示</h1><p>请使用支持 WebGL 的浏览器打开。</p></div>
     <div class="room-navigation">
       <div id="room-menu" hidden>
+        <div id="room-shortcuts" aria-label="房间入口"></div>
+        <details id="room-settings"><summary>房间设置</summary>
         <nav aria-label="场景视角">
           <button data-view="left" aria-pressed="false">左侧</button>
           <button data-view="perspective" aria-pressed="true">回中间</button>
@@ -37,11 +39,12 @@
         <button id="motion" aria-pressed="true">动效 <span>开</span></button>
         <div class="caption" role="status"><p></p></div>
         <p class="room-gesture">WASD 移动 · 左右拖动 · 滚轮或双指缩放</p>
+        </details>
       </div>
       <button id="room-menu-toggle" aria-label="房间导航" aria-expanded="false" aria-controls="room-menu">
         <span class="fish-mark" aria-hidden="true"></span>
       </button>
     </div>
-  </main>
+  </main>
 </body>
 </html>
